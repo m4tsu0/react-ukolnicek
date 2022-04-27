@@ -1,0 +1,97 @@
+body { /*pozadni*/
+  background: linear-gradient(
+    90deg,
+    rgb(218, 218, 218) 0%,
+    rgb(194, 194, 194) 100%
+  );
+}
+
+.complete  { /* dokoncene ukoly */
+  text-decoration: line-through;
+  opacity: 0.35;  
+}
+
+.todo-row {
+  display: flex; /*tlacitka jsou na druhy strane */
+  justify-content: space-between; /* misto mezi tlacitky*/
+  align-items: center; 
+  margin: 4px auto; /* oddsazeni od dalsich bunek*/
+  margin-top: 0px;
+  color: rgb(255, 255, 255); /*barva pisma */
+
+  padding: 16px; /*sirka ukolu*/
+  border-radius: 5px; /*zaobledni*/
+  width: 90%;
+
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  
+  background: linear-gradient(
+    90deg,
+    rgb(55, 55, 55) 0%,
+    rgb(90, 90, 90) 100%
+  ); 
+  
+}
+
+.add-todo{ /*tlacitko pridat, uz se ale nepouziva*/ 
+  background: linear-gradient(
+    270deg,
+    rgb(29, 29, 29) 0%,
+    rgb(85, 85, 85) 100%
+  );
+}
+
+.ukolnicek{
+  color: rgb(56, 55, 55);
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 125px;
+  margin-bottom: 0%;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+
+.ukol{
+  background: rgb(65, 65, 65);
+  color: white;
+  border: 2px solid rgba(255, 0, 0, 0);
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+  'Lucida Sans', Arial, sans-serif;
+}
+
+.nadpisy{
+  margin: 4px auto; /* oddsazeni od dalsich bunek*/
+  display: flex; /*tlacitka jsou na druhy strane */
+  justify-content: space-between; /* misto slovy*/
+  margin-top: 0px;
+  width: 90%;
+
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+  'Lucida Sans', Arial, sans-serif;
+  margin-bottom: 8px;
+}
+
+.nadpis-ukol{
+  color:rgb(0, 0, 0);
+  font-size: large;
+  margin-left: 30px;
+
+}
+.nadpis-cas{
+  color:rgb(0, 0, 0);
+  font-size: large;
+
+  margin-left: auto;
+  margin-right: 130px;
+}
+.nadpis-akce{
+  color:rgb(0, 0, 0);
+  font-size: large;
+  margin-right: 100px;
+}
